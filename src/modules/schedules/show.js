@@ -3,14 +3,14 @@ import dayjs from "dayjs";
 // Seleciona as sessões manhã, tarde e noite.
 const periodMorning = document.getElementById("period-morning")
 const periodAfternoon = document.getElementById("period-afternoon")
-const periodnight = document.getElementById("period-night")
+const periodNight = document.getElementById("period-night")
 
 export function schedulesShow({ dailySchedules }) {
     try {
         // Limpa as listas
         periodMorning.innerHTML = ""
         periodAfternoon.innerHTML = ""
-        periodnight.innerHTML = ""
+        periodNight.innerHTML = ""
 
         // Renderiza os agendamentos por período.
         dailySchedules.forEach((schedule) => {
@@ -39,10 +39,10 @@ export function schedulesShow({ dailySchedules }) {
             // Renderiza o agendamento na sessão (manhã, tarde ou noite)
             if (hour <= 12) {
                 periodMorning.appendChild(item)
-            } else if (hour > 12 && hour <= 18) {
+            } else if (hour > 12 && hour < 18) {
                 periodAfternoon.appendChild(item)
             } else {
-                periodnight.appendChild(item)
+                periodNight.appendChild(item)
             }
         })
 
