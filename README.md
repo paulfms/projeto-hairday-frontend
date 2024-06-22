@@ -33,6 +33,8 @@ Nesse projeto foi utilizado para a construção do frontend e o server com os se
 - Webpack server
 - Babel
 - Dayjs
+- CSS loader
+- Style loader
 
 ## 🌩️ Como startar a aplicação?
 Precisará ter o nodejs instalado na versão LTS, o git e um editor de código que recomendo o Visual Studio Code (VScode).
