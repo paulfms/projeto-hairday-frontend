@@ -37,11 +37,12 @@ Nesse projeto foi utilizado para a construção do frontend e o server com os se
 ## 🌩️ Como startar a aplicação?
 Precisará ter o nodejs instalado na versão LTS, o git e um editor de código que recomendo o Visual Studio Code (VScode).
 
-1. Faça o clone do projeto na pasta desejada com o comando: `git clone <link_do_projeto_Clonado>`
-2. Após isso abra o projeto no VSCode
-3. Para iniciar o json-server no VScode digite o comando no terminal `npm run server`
-4. No VScode adicione um novo terminal sem fechar o anterior e inicie o frontend com o comando `npm run dev`
+📢 OBS: É importante que o git esteja configurado na máquina local antes de ser clonado via SSH.
 
+1. No terminal faça o clone do projeto na pasta desejada com o comando: `git clone git@github.com:paulfms/projeto-hairday-frontend.git`
+2. Após isso abra o projeto no VSCode
+3. Para iniciar o Server no VScode digite o comando no terminal `npm run server`
+4. Ainda no VScode adicione um novo terminal sem fechar o anterior e inicie o frontend com o comando `npm run dev`
 
 ## 🎉 Reconhecimento
 
