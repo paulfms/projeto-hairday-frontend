@@ -4,7 +4,7 @@
     "author": "Paul Anderson",
     "scripts": {
       "build": "webpack",
-      "server": "node server.json"
+      "server": "json-server db.json --watch"
     },
     "dependencies": {
       "dayjs": "^1.11.10",
