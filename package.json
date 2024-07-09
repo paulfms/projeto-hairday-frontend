@@ -3,12 +3,9 @@
   "description": "Aplicação web de agendamento para corte de cabelo",
   "author": "Paul Anderson",
   "scripts": {
-    "dev": "webpack serve --config webpack.dev.js",
-    "server": "json-server --watch server.json --port 3333",
-    "build": "webpack build --config webpack.prod.js",
-    "build:dev": "webpack build --config webpack.dev.js",
-    "build:prod": "webpack build --config webpack.prod.js",
-    "build:watch": "webpack build --config webpack.dev.js"
+    "build": "webpack",
+    "dev": "webpack serve",
+    "server": "json-server --watch server.json --port 3333"
   },
   "dependencies": {
     "dayjs": "^1.11.10",
@@ -24,7 +21,6 @@
     "style-loader": "^3.3.3",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1",
-    "webpack-merge": "^6.0.1"
+    "webpack-dev-server": "^4.15.1"
   }
 }
