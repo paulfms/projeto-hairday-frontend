@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "apiServer.js",
+            "use": "@vercel/node",
+            "config": {
+                "includeFiles": [
+                    "server.json"
+                ]
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "apiServer.js"
+        }
+    ]
+}
