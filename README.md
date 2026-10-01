@@ -37,14 +37,17 @@ Nesse projeto foi utilizado para a construção do frontend e o server com os se
 - Style loader
 
 ## 🌩️ Como startar a aplicação?
-Precisará ter o nodejs instalado na versão LTS, o git e um editor de código que recomendo o Visual Studio Code (VScode).
+Precisará ter o Node.js 22.23.3 LTS (versão definida em `.nvmrc`), o npm 10.9.9 que acompanha essa versão, o git e um editor de código que recomendo o Visual Studio Code (VScode).
 
 📢 OBS: É importante que o git esteja configurado na máquina local antes de ser clonado via SSH.
 
 1. No terminal faça o clone do projeto na pasta desejada com o comando: `git clone git@github.com:paulfms/projeto-hairday-frontend.git`
-2. Após isso abra o projeto no VSCode
-3. Para iniciar o Server no VScode digite o comando no terminal `npm run server`
-4. Ainda no VScode adicione um novo terminal sem fechar o anterior e inicie o frontend com o comando `npm run dev`
+2. Após isso abra o projeto no VSCode. Se usar nvm, execute `nvm install` e `nvm use` na raiz.
+3. Instale as dependências com `npm ci`, preservando as versões corrigidas do `package-lock.json`.
+4. Para iniciar o Server no VScode digite o comando no terminal `npm run server`
+5. Ainda no VScode adicione um novo terminal sem fechar o anterior e inicie o frontend com o comando `npm run dev`
+
+Para validar o frontend, execute `npm run build` e `npm audit`. O diretório `backend/` tem um segundo arquivo de dependências; valide-o separadamente com `npm --prefix backend ci` e `npm --prefix backend audit`. O build do frontend deve ser executado na raiz.
 
 ## 🎉 Reconhecimento
 
